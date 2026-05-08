@@ -40,8 +40,9 @@ This setup is ideal for creating a dedicated, full-screen Home Assistant web kio
 - Tailored for touchscreen displays with pull-to-refresh support
 
 ## Usage
-
-1. **Download the script**:
+0. install debian 13 server without graphical interface
+0.1. install sudo : To install sudo on Debian, log in as root using su -, update your repositories with apt update, and install the package using apt install sudo. Afterward, add your user to the sudo group with usermod -aG sudo username and log out/in to apply changes.
+2. **Download the script**:
 
    **Option 1 (Recommended)**: Download from the latest stable release (v0.9.1)
    ```bash
@@ -53,11 +54,11 @@ This setup is ideal for creating a dedicated, full-screen Home Assistant web kio
    wget -O ha-chromium-kiosk-setup.sh https://raw.githubusercontent.com/kunaalm/ha-chromium-kiosk/main/ha-chromium-kiosk-setup.sh
    ```
 
-2. **Make the script executable:**
+3. **Make the script executable:**
    ```bash
    chmod +x ha-chromium-kiosk-setup.sh
    ```
-3. **Run the script using** sudo **with** install **or** uninstall **option**:
+4. **Run the script using** sudo **with** install **or** uninstall **option**:
    ```bash
    sudo ./ha-chromium-kiosk-setup.sh install
    ```
@@ -74,7 +75,7 @@ This setup is ideal for creating a dedicated, full-screen Home Assistant web kio
    sudo ./ha-chromium-kiosk-setup.sh uninstall
    ```
 
-4. **Reboot the System:**
+5. **Reboot the System:**
 After the script completes, you will be prompted to reboot. You can either reboot immediately or do so manually later to activate the kiosk environment.
 
 ### Important Information
